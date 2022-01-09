@@ -4,15 +4,6 @@
 #include <RcppArmadillo.h>
 using namespace Rcpp;
 
-//'@title Independence test of categorical variables
-//'@description
-//'@param a a matrix
-//'@examples
-//'chisq_test(matrix(c(98,38,289,67,41,262,13,8,57,18,12,30),4,3,b=T))
-//'chisq_test(matrix(c(341,405,105,103,11,15),2,3,b=T))
-//'@import Rcpp
-//'@import RcppArmadillo
-//'@export
 // [[Rcpp::export]]
 double fac(int n)
 {
@@ -84,6 +75,15 @@ double fisher(arma::mat a){
   return temp0;
 }
 
+//'@title Independence test of categorical variables
+//'@description
+//'@param a a matrix
+//'@examples
+//'chisq_test(matrix(c(98,38,289,67,41,262,13,8,57,18,12,30),4,3,b=T))
+//'chisq_test(matrix(c(341,405,105,103,11,15),2,3,b=T))
+//'@import Rcpp
+//'@import RcppArmadillo
+//'@export
 // [[Rcpp::export]]
 List chisq_test(arma::mat a) {
   int r = a.n_rows;
