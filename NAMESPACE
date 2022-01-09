@@ -1,4 +1,1 @@
-exportPattern("^[[:alpha:]]+")
-importFrom(Rcpp, evalCpp)
-useDynLib(indetestc, .registration = TRUE)
 export(chisq_test)
