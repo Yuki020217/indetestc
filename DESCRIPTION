@@ -1,0 +1,16 @@
+Package: indetestc
+Type: Package
+Title: Independence test of categorical variables
+Version: 1.0.0
+Author: Yuki Huang, Xie Zhongming
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Rcpp (>= 1.0.7),
+    RcppArmadillo
+LinkingTo: Rcpp,RcppArmadillo
+RoxygenNote: 7.1.2
